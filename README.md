@@ -1,6 +1,6 @@
 # txtai -> weaviate integration example
 
-This repository contains an example Weaviate integration with txtai. A txtai workflow is used to index and search with Weaviate.
+This repository contains an example [Weaviate](https://github.com/semi-technologies/weaviate) integration with [txtai](https://github.com/neuml/txtai). A txtai workflow is used to index and search with Weaviate.
 
 The following diagram illustrates the architecture.
 
@@ -45,3 +45,9 @@ curl -XPOST "http://localhost:8000/workflow" -H "Content-Type: application/json"
 curl -XPOST "http://localhost:8000/workflow" -H "Content-Type: application/json" -d '{"name": "search", "elements": ["feel good story"]}'
 # [{"data":{"Get":{"Post":[{"_additional":{"certainty":0.5416451},"content":"Maine man wins $1M from $25 lottery ticket"}]}}}]
 ```
+
+## Files
+
+- [app.yml](https://github.com/neuml/txtai.weaviate/blob/master/app.yml) - txtai workflow
+- [client.py](https://github.com/neuml/txtai.weaviate/blob/master/client.py) - defines a Weaviate client as a txtai pipeline
+- [example.py](https://github.com/neuml/txtai.weaviate/blob/master/example.py) - Execute workflow with a txtai application
