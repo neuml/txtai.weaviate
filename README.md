@@ -1,6 +1,10 @@
 # txtai -> weaviate integration example
 
-This repository contains an example Weaviate integration with txtai. 
+This repository contains an example Weaviate integration with txtai. A txtai workflow is used to index and search with Weaviate.
+
+The following diagram illustrates the architecture.
+
+![architecture](https://raw.githubusercontent.com/neuml/txtai.weaviate/master/architecture.png)
 
 ## Installation
 
@@ -39,11 +43,5 @@ curl -XPOST "http://localhost:8000/workflow" -H "Content-Type: application/json"
 # ["db471ead-5764-4933-a3b0-ba5e7e4039db","2e52177a-ee91-4c00-8f94-594c16ddda55","04e9098d-ac14-4392-9341-6079fefc5cdf","7546a8c4-c10d-49ee-9a76-1d0377d18a9d","bc825fd4-3139-448a-a6e0-85d7b9483e6c","99ffbb1b-5910-40a6-921c-2ce8822166a7"]
 
 curl -XPOST "http://localhost:8000/workflow" -H "Content-Type: application/json" -d '{"name": "search", "elements": ["feel good story"]}'
-# [{"data":{"Get":{"Post":[{"_additional":{"certainty":0.5416451},"content":"Maine man wins $1M from $25 lottery ticket"}]}}}][dmezzett@neuml ~]$ 
+# [{"data":{"Get":{"Post":[{"_additional":{"certainty":0.5416451},"content":"Maine man wins $1M from $25 lottery ticket"}]}}}]
 ```
-
-## Architecture
-
-This example uses a txtai workflow to index and search with Weaviate. The following diagram illustrates the architecture.
-
-![architecture](![further](https://raw.githubusercontent.com/neuml/txtai.weaviate/master/architecture.png)
