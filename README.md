@@ -1,5 +1,7 @@
 # txtai -> weaviate integration example
 
+*This project has been archived. For those interested in a txtai-weaviate integration [check out this repository](https://github.com/weaviate/partner-integration-examples).*
+
 This repository contains an example [Weaviate](https://github.com/semi-technologies/weaviate) integration with [txtai](https://github.com/neuml/txtai). A txtai workflow is used to index and search with Weaviate.
 
 The following diagram illustrates the architecture.
